@@ -7,6 +7,7 @@
 
 
 
+
 * RESET */
 * {
     margin: 0;
@@ -1617,11 +1618,75 @@ form textarea:focus {
     margin-bottom: 10px;
 }
 /*SU TELEFONO SI METTE PERFETTO*/
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
-    .media-mapa {
-        flex-direction: column;
-    }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .hero {
+    height: auto;
+    padding: 40px 10px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
+
 
 /*BOTN PAGINA CONTATT*/
 .btn-home {
@@ -1716,9 +1781,6 @@ about-highlight {
 }
 
 /*CONFIGURACION PER CELLULAR*/
-
-
-
 /* 📱 MOBILE SAFE (non rompe il design) */
 @media (max-width: 768px) {
 
@@ -1758,76 +1820,23 @@ about-highlight {
 
 }
 
-
-
 /*PER SISTEMAR ILMENU EN EL CELLULARE*/
 /* FIX SOLO MOBILE MENU */
-
-/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
-  body {
-    overflow-x: hidden;
-  }
+    nav {
+        overflow-x: auto;
+    }
 
-  .nav-container {
-    flex-direction: column;
-    align-items: center;
-  }
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+    }
 
-  .navbar {
-    padding: 10px;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .nav-links a {
-    font-size: 12px;
-  }
-
-  h1 {
-    font-size: 24px;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 20px;
-    text-align: center;
-  }
-
-  p {
-    font-size: 14px;
-    text-align: center;
-    padding: 0 10px;
-  }
-
-  .hero {
-    height: auto;
-    padding: 40px 10px;
-    text-align: center;
-  }
-
-  .hero h1 {
-    font-size: 26px;
-  }
-
-  .hero p {
-    font-size: 14px;
-  }
-
-  .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+    nav ul li {
+        flex: 0 0 auto;
+    }
 }
